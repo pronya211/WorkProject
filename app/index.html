@@ -31,23 +31,23 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Commands <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li data-test="Querying"><a href="/commands/querying">Querying</a></li>
-              <li><a href="/commands/traversal">Traversal</a></li>
-              <li><a href="/commands/actions">Actions</a></li>
-              <li><a href="/commands/window">Window</a></li>
-              <li><a href="/commands/viewport">Viewport</a></li>
-              <li><a href="/commands/location">Location</a></li>
-              <li><a href="/commands/navigation">Navigation</a></li>
-              <li><a href="/commands/assertions">Assertions</a></li>
-              <li><a href="/commands/misc">Misc</a></li>
-              <li><a href="/commands/connectors">Connectors</a></li>
-              <li><a href="/commands/aliasing">Aliasing</a></li>
-              <li><a href="/commands/waiting">Waiting</a></li>
-              <li><a href="/commands/network-requests">Network Requests</a></li>
-              <li><a href="/commands/files">Files</a></li>
-              <li><a href="/commands/local-storage">Local Storage</a></li>
-              <li><a href="/commands/cookies">Cookies</a></li>
-              <li><a href="/commands/spies-stubs-clocks">Spies, Stubs &amp; Clocks</a></li>
+              <li data-cy="querying-button"><a href="/commands/querying">Querying</a></li>
+              <li data-cy="traversal-button"><a href="/commands/traversal">Traversal</a></li>
+              <li data-cy="actions-button"><a href="/commands/actions">Actions</a></li>
+              <li data-cy="window-button"><a href="/commands/window">Window</a></li>
+              <li data-cy="viewport-button"><a href="/commands/viewport">Viewport</a></li>
+              <li data-cy="location-button"><a href="/commands/location">Location</a></li>
+              <li data-cy="navigation-button"><a href="/commands/navigation">Navigation</a></li>
+              <li data-cy="assertions-button"><a href="/commands/assertions">Assertions</a></li>
+              <li data-cy="misc-button"><a href="/commands/misc">Misc</a></li>
+              <li data-cy="connectors-button"><a href="/commands/connectors">Connectors</a></li>
+              <li data-cy="aliasing-button"><a href="/commands/aliasing">Aliasing</a></li>
+              <li data-cy="waiting-button"><a href="/commands/waiting">Waiting</a></li>
+              <li data-cy="network-requests-button"><a href="/commands/network-requests">Network Requests</a></li>
+              <li data-cy="files-button"><a href="/commands/files">Files</a></li>
+              <li data-cy="local-storage-button"><a href="/commands/local-storage">Local Storage</a></li>
+              <li data-cy="cookies-button"><a href="/commands/cookies">Cookies</a></li>
+              <li data-cy="spies-stubs-clocks-button"><a href="/commands/spies-stubs-clocks">Spies, Stubs &amp; Clocks</a></li>
             </ul>
           </li>
           <li><a href="/utilities">Utilities</a></li>
@@ -81,7 +81,7 @@
     <div class="row">
       <div class="col-xs-12">
         <ul class="home-list">
-          <li>
+          <li data-cy="querying-button">
             <a href="/commands/querying">Querying</a>
             <ul>
               <li><a href="/commands/querying">get</a></li>
@@ -90,7 +90,7 @@
               <li><a href="/commands/querying">root</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="traversal-button">
             <a href="/commands/traversal">Traversal</a>
             <ul>
               <li><a href="/commands/traversal">children</a></li>
@@ -113,7 +113,7 @@
               <li><a href="/commands/traversal">siblings</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="actions-button">
             <a href="/commands/actions">Actions</a>
             <ul>
               <li><a href="/commands/actions">type</a></li>
@@ -132,7 +132,7 @@
               <li><a href="/commands/actions">trigger</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="window-button">
             <a href="/commands/window">Window</a>
             <ul>
               <li><a href="/commands/window">window</a></li>
@@ -140,13 +140,13 @@
               <li><a href="/commands/window">title</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="viewport-button">
             <a href="/commands/viewport">Viewport</a>
             <ul>
               <li><a href="/commands/viewport">viewport</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="location-button">
             <a href="/commands/location">Location</a>
             <ul>
               <li><a href="/commands/location">hash</a></li>
@@ -154,7 +154,7 @@
               <li><a href="/commands/location">url</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="navigation-button">
             <a href="/commands/navigation">Navigation</a>
             <ul>
               <li><a href="/commands/navigation">go</a></li>
@@ -162,7 +162,7 @@
               <li><a href="/commands/navigation">visit</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="assertions-button">
             <a href="/commands/assertions">Assertions</a>
             <ul>
               <li>Implicit Assertions</li>
@@ -173,7 +173,7 @@
               <li><a href="/commands/assertions">assert</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="misc-button">
             <a href="/commands/misc">Misc</a>
             <ul>
               <li><a href="/commands/misc">end</a></li>
@@ -183,7 +183,7 @@
               <li><a href="/commands/misc">wrap</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="connectors-button">
             <a href="/commands/connectors">Connectors</a>
             <ul>
               <li><a href="/commands/connectors">each</a></li>
@@ -193,19 +193,19 @@
               <li><a href="/commands/connectors">then</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="aliasing-button">
             <a href="/commands/aliasing">Aliasing</a>
             <ul>
               <li><a href="/commands/aliasing">as</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="waiting-button">
             <a href="/commands/waiting">Waiting</a>
             <ul>
               <li><a href="/commands/waiting">wait</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="network-requests-button">
             <a href="/commands/network-requests">Network Requests</a>
             <ul>
               <li><a href="/commands/network-requests">server</a></li>
@@ -213,7 +213,7 @@
               <li><a href="/commands/network-requests">route</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="files-button">
             <a href="/commands/files">Files</a>
             <ul>
               <li><a href="/commands/files#fixtures">fixtures</a></li>
@@ -221,19 +221,19 @@
               <li><a href="/commands/files#writefile">writeFile</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="local-storage-button">
             <a href="/commands/local-storage">Local Storage</a>
             <ul>
               <li><a href="/commands/local-storage">clearLocalStorage</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="cookies-button">
             <a href="/commands/cookies">Cookies</a>
             <ul>
               <li><a href="/commands/cookies">clearCookies</a></li>
             </ul>
           </li>
-          <li>
+          <li data-cy="spies-stubs-clocks-button">
             <a href="/commands/spies-stubs-clocks">Spies, Stubs &amp; Clocks</a>
             <ul>
               <li><a href="/commands/spies-stubs-clocks">spy</a></li>
