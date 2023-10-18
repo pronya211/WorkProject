@@ -30,6 +30,38 @@ describe('Assertions', () => {
     cy.get('th[scope="row"]').first().invoke('text').then(parseFloat).should('equal', 1)
     
 
-    cy.visit('http://localhost:8080/commands/querying')
+    cy.visit('http://localhost:8080/commands/querying');
+    cy.get('#inputName').type('Hello').should('have.value', 'Hello');
+
+    cy.visit('http://localhost:8080/commands/traversal');
+    cy.get('.traversal-disabled .btn.btn-default').eq(0).should('be.disabled');
+    cy.get('.traversal-disabled .btn.btn-default').eq(1).should('be.enabled');
+
+
+    cy.visit('http://localhost:8080/commands/assertions');
+    cy.get('.table.table-bordered.assertion-table tr td')
+    .eq(4)
+    .should('have.css', 'background-color', 'rgb(223, 240, 216)');
+
+    cy.get('.table.table-bordered.assertion-table tr td')
+    .eq(4)
+    .should('have.css', 'background-color')
+    .and('eq','rgb(223, 240, 216)');
+
+    cy.get('.assertions-link')
+    .should('have.text', 'Cypress Docs')
+    .and('have.class', 'active')
+    .and('have.attr', 'href')
+    .and('include', 'cypress.io');
+    
+
+    cy.get('h3:contains("Implicit Assertions")').should('be.visible');
+    //cy.get('h3:contains("Implicit Assertions")').should('not.be.visible'); перевірка що елемент невидимий
+    //cy.get('h3:contains("Implicit Assertions")').should('not.exist');
+
+    cy.get('[data-toggle="dropdown"]').click();
+    cy.get('.dropdown-menu li').should('have.length', 17);
+
+
   })
 })
